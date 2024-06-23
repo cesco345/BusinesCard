@@ -84,6 +84,8 @@ export default function App() {
           <Text style={styles.occupationText}>{getOccupation()}</Text>
           {renderIcons()}
           <Map />
+          <ContactForm />
+          <VCardDownload />
           <Button title="LinkedIn Profile" onPress={onContactMe} />
           <QRCodeSection />
 
