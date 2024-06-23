@@ -1,9 +1,11 @@
-![Simulator Screenshot - iPhone 15 - 2024-06-23 at 13 29 40](https://github.com/cesco345/BusinesCard/assets/5659574/5aea9440-ed0b-4e33-9fc4-9126057277f0)
+These are some screenshots of the application:
 
-![Simulator Screenshot - iPhone 15 - 2024-06-23 at 13 30 55](https://github.com/cesco345/BusinesCard/assets/5659574/477cd792-668d-4bb3-953c-c5862080e6bc)
+![image](https://github.com/cesco345/BusinesCard/assets/5659574/d74e49d5-5786-4d5a-9554-661d22349af6)
 
-![Simulator Screenshot - iPhone 15 - 2024-06-23 at 13 30 28](https://github.com/cesco345/BusinesCard/assets/5659574/1a0d389a-9a58-44a1-8a21-ee74d83b32e0)
+![image](https://github.com/cesco345/BusinesCard/assets/5659574/68c9e42d-b113-4fb3-8bde-fd98d100fe02)
 
-![Simulator Screenshot - iPhone 15 - 2024-06-23 at 13 31 25](https://github.com/cesco345/BusinesCard/assets/5659574/b7017a9c-0e31-459f-b5d0-f48b8f5e4324)
+![image](https://github.com/cesco345/BusinesCard/assets/5659574/6f1ad458-aa6b-47b1-80bb-d8f920341b1d)
 
-![Simulator Screenshot - iPhone 15 - 2024-06-23 at 13 31 13](https://github.com/cesco345/BusinesCard/assets/5659574/080322eb-f881-4268-9341-ab40e93ffb62)
+![image](https://github.com/cesco345/BusinesCard/assets/5659574/70b716f8-c4da-4902-9606-5cca077d0da6)
+
+![image](https://github.com/cesco345/BusinesCard/assets/5659574/ffde7796-b21b-4163-9c6a-2a186c1834ee)
