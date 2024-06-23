@@ -12,16 +12,22 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fpiscani.BusinessCard",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show a map."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.fpiscani.BusinessCard"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     }
+    
   }
 }

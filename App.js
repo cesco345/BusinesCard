@@ -11,7 +11,11 @@ import {
   Linking,
 } from "react-native";
 import { FontAwesome6 } from "@expo/vector-icons";
-import QRCode from "react-native-qrcode-svg";
+import QRCodeSection from "./components/QRCodeSection";
+import ContactForm from "./components/ContactForm";
+import Map from "./components/Map";
+import PortfolioGallery from "./components/PortfolioGallery";
+import VCardDownload from "./components/VCardDownload";
 
 export default function App() {
   const name = "Francesco Piscani";
@@ -38,20 +42,28 @@ export default function App() {
 
   const renderIcons = () => {
     return (
-      <View style={{ flexDirection: "row", margin: 10, gap: 10 }}>
+      <View style={{ flexDirection: "row", margin: 10 }}>
         <FontAwesome6
           name="github"
           size={24}
           color="black"
           onPress={onGithub}
+          style={styles.icon}
         />
         <FontAwesome6
           name="x-twitter"
           size={24}
           color="black"
           onPress={onTwitter}
+          style={styles.icon}
         />
-        <FontAwesome6 name="at" size={24} color="black" onPress={onEmail} />
+        <FontAwesome6
+          name="at"
+          size={24}
+          color="black"
+          onPress={onEmail}
+          style={styles.icon}
+        />
       </View>
     );
   };
@@ -62,39 +74,20 @@ export default function App() {
         <ScrollView contentContainerStyle={styles.container}>
           <Image
             source={require("./assets/dna_2.png")}
-            style={{
-              width: "100%",
-              aspectRatio: 4 / 3,
-              resizeMode: "contain",
-            }}
+            style={styles.headerImage}
           />
           <Image
             source={require("./assets/cesco.jpeg")}
-            style={{
-              width: 100,
-              height: 100,
-              borderRadius: 75,
-              borderWidth: 5,
-              borderColor: "white",
-              marginTop: -100,
-            }}
+            style={styles.profileImage}
           />
-          <Text style={{ fontSize: 22, fontWeight: "bold", color: "black" }}>
-            {name}
-          </Text>
-          <Text style={{ fontSize: 18, fontWeight: "400", color: "black" }}>
-            {getOccupation()}
-          </Text>
+          <Text style={styles.nameText}>{name}</Text>
+          <Text style={styles.occupationText}>{getOccupation()}</Text>
           {renderIcons()}
+          <Map />
           <Button title="LinkedIn Profile" onPress={onContactMe} />
-          <QRCode
-            value="https://www.linkedin.com/in/francesco-piscani-18b99748/"
-            size={150}
-            color="black"
-            backgroundColor="white"
-            gap={10}
-            padding={10}
-          />
+          <QRCodeSection />
+
+          <PortfolioGallery />
 
           <StatusBar style="auto" />
         </ScrollView>
@@ -110,7 +103,41 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     padding: 16,
+  },
+  headerImage: {
+    width: "100%",
+    aspectRatio: 4 / 3,
+    resizeMode: "contain",
+  },
+  profileImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 75,
+    borderWidth: 5,
+    borderColor: "white",
+    marginTop: -95,
+  },
+  nameText: {
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "black",
+    marginVertical: 8,
+  },
+  occupationText: {
+    fontSize: 18,
+    fontWeight: "400",
+    color: "black",
+    marginBottom: 16,
+  },
+  icon: {
+    marginHorizontal: 8,
+  },
+  aboutMeText: {
+    padding: 10,
+    fontSize: 16,
+    lineHeight: 22,
+    color: "black",
   },
 });
