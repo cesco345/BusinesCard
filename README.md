@@ -1,4 +1,4 @@
-These are some screenshots of the application:
+We all have been in situations where people ask you for a business card. Sometimes you don't happen to have one, or more importantly you stopped using paper-based business cards. In this case, I wanted an application that replaces the use of paper business cards, allows you to send messages bypassing LinkedIn InMail and shows some projects that you are working on. In case that you prefer to use LinkedIn, it has a QR code functionality that redirects you to the user's LinkedIn profile or any other URL of your choice. Here are some screenshots of the application:
 
 ![image](https://github.com/cesco345/BusinesCard/assets/5659574/28d7e845-6767-4225-a606-c9ab9fe27f60)
 
