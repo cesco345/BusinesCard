@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
   qrText: {
     marginBottom: 10,
     fontSize: 16,
-    color: "black",
+    color: "dimgray",
+    fontWeight: "bold",
   },
 });
 

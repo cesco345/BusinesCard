@@ -8,8 +8,8 @@ const Map = () => {
       <MapView
         style={styles.map}
         initialRegion={{
-          latitude: 41.6620925,
-          longitude: -71.1840449,
+          latitude: 42.3622446,
+          longitude: -71.0950513,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
@@ -26,9 +26,11 @@ const Map = () => {
 
 const styles = StyleSheet.create({
   mapContainer: {
-    height: 200,
-    width: "100%",
+    height: 300,
+    aspectRatio: 16 / 9,
     marginVertical: 20,
+    borderRadius: 15,
+    overflow: "hidden",
   },
   map: {
     ...StyleSheet.absoluteFillObject,

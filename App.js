@@ -16,6 +16,7 @@ import ContactForm from "./components/ContactForm";
 import Map from "./components/Map";
 import PortfolioGallery from "./components/PortfolioGallery";
 import VCardDownload from "./components/VCardDownload";
+import ProjectCard from "./components/ProjectCard";
 
 export default function App() {
   const name = "Francesco Piscani";
@@ -25,7 +26,7 @@ export default function App() {
   };
 
   const onContactMe = () => {
-    Linking.openURL("https://www.linkedin.com/in/francesco-piscani-18b99748/");
+    Linking.openURL("mailto:fpiscani@gmail.com");
   };
 
   const onGithub = () => {
@@ -85,11 +86,49 @@ export default function App() {
           {renderIcons()}
           <Map />
           <ContactForm />
-          <VCardDownload />
-          <Button title="LinkedIn Profile" onPress={onContactMe} />
+          {/* <VCardDownload /> */}
+          <Button title="Contact me" onPress={onContactMe} />
           <QRCodeSection />
 
-          <PortfolioGallery />
+          <Text
+            style={{
+              fontWeight: "bold",
+              fontSize: 18,
+              marginTop: 20,
+              margin: 10,
+            }}
+          >
+            Portfolio
+          </Text>
+
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={{ padding: 10, gap: 10 }}
+          >
+            <ProjectCard
+              name="Hybridization Techniques"
+              image={require("./assets/pippette.jpeg")}
+            />
+            <ProjectCard
+              name="Gene Silencing"
+              image={require("./assets/lab_people.jpg")}
+            />
+            <ProjectCard
+              name="LLM Based Proteomics"
+              image={require("./assets/ai.jpeg")}
+            />
+            <ProjectCard
+              name="CRISPR-Cas9"
+              image={require("./assets/dna.jpeg")}
+            />
+            <ProjectCard
+              name="AI Bioinformatics"
+              image={require("./assets/scientist1.png")}
+            />
+          </ScrollView>
+
+          {/* <PortfolioGallery /> */}
 
           <StatusBar style="auto" />
         </ScrollView>
@@ -129,8 +168,8 @@ const styles = StyleSheet.create({
   },
   occupationText: {
     fontSize: 18,
-    fontWeight: "400",
-    color: "black",
+    fontWeight: "bold",
+    color: "dimgray",
     marginBottom: 16,
   },
   icon: {
